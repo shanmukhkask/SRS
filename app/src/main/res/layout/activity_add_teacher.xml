@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#DABADF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Teacher"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:onClick="logout"
+            android:text="Logout"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/modifyLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/etTeacherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Student name"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                android:hint="Teacher Name"
+                android:imeOptions="actionNext"
+                android:inputType="textFilter"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/etTeacherId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="Registration Number"
+                android:digits="0123456789"
+                android:hint="Teacher Id"
+                android:imeOptions="actionGo"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnAddRecord"
+            android:layout_width="282dp"
+            android:layout_height="43dp"
+            android:background="@drawable/btn_style"
+            android:backgroundTint="#1880E8"
+            android:onClick="addTeacher"
+            android:text="Add Teacher"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_new_style"
+                android:onClick="home"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_new_style"
+                android:onClick="back"
+                android:text="Back" />
+        </LinearLayout>
+<!--    </RelativeLayout>-->
+
+
+</LinearLayout>

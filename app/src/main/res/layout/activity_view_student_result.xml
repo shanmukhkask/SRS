@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DABADF"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="View Result"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:onClick="logout"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Student Name"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Student Name"
+            android:id="@+id/tvStudentName"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Registration Number"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Student Name"
+            android:id="@+id/tvRegNum"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Marks Details"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:text="Marks"
+        android:id="@+id/tvMarks"/>
+    <Button
+        android:padding="10sp"
+        android:id="@+id/btnDeleteResult"
+        android:background="@drawable/btn_new_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download Result"
+        android:onClick="downloadResult"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btnChangePwd"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_new_style"
+            android:layout_weight="1"
+            android:onClick="home"
+            android:layout_height="wrap_content"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:background="@drawable/btn_new_style"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="back"/>
+    </LinearLayout>
+</LinearLayout>
